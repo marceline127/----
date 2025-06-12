@@ -1,0 +1,744 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #e8d69d;
+}
+
+.navbar {
+  height: 40px;
+  display: flex;
+  background-image:url("images/navbg.png");
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  height: 100%;
+  width: 100%;
+}
+
+.navbar li {
+  margin: 0 2px;
+  border-right: 1px solid white; 
+  height:100%;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.navbar a {
+  white-space: pre;
+  display: block;
+  color: #594511;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-family: "Microsoft JhengHei", serif;
+}
+
+.navbar a:hover {
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border-radius: 1px;
+}
+
+.right-link {
+  margin-left: auto;
+  margin-right: 0px;
+  border-left: 1px solid white; /* 如果你想讓它左邊也有一條線 */
+  border-right: none;
+}
+
+.navbar2 {
+  height: 100px;
+  display: flex;
+  background-color:#faf6f0;
+  background-size: cover;     
+  padding: 0px 20px;
+}
+
+.leftnav2 {
+  height: 91px;
+  margin-top: 7px;
+  width: auto;
+  object-fit: contain;
+  display: flex;
+}
+
+.navbar2 li {
+  margin: 0 2px;
+  margin-top: 30px;
+  height:42px;
+  width: 140px;
+  background-color: #f4cd5f;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.rightnav2 {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.rightnav2 a {
+  color: #351704;
+  display: block;
+  padding: 0 15px;
+  margin: 13px;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-family: "Microsoft JhengHei", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rightnav2 a :hover {
+  background-color: #ffffff;
+  opacity: 1;
+  border-radius: 1px;
+}
+
+.photo-viewer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Microsoft JhengHei", serif;
+}
+
+.viewer-controls {
+  position: absolute;
+  top: 400px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1350px;
+  z-index: 10; 
+}
+
+.viewer-btn {
+  background-color: #ffffff;
+  opacity: 0.5;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.viewer-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.center-button{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.center-button li{
+  margin: 0 2px;
+  margin-top: 50px;
+  height:42px;
+  width: 140px;
+  background-color: #f4cd5f;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.center-button a{
+  color: #351704;
+  display: block;
+  padding: 0 15px;
+  margin: 4px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "Microsoft JhengHei", serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.photo-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.photo-card {
+  display: block;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 480px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  text-decoration: none; 
+  color: inherit; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.photo-thumbnails a img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.photo-card p {
+  color: #351704;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.center-button2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.center-button2 li{
+  margin: 0 2px;
+  margin-top: 20px;
+  height:45px;
+  width: 210px;
+  background-color: transparent;
+  border: 1px solid #351704;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-button2 a{
+  white-space: pre;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #351704;
+  font-size: 20px;
+  text-decoration: none;
+}
+ 
+.center-button2 a:hover {
+  transform: none;
+  background-color: #351704 !important;
+  color: #fff !important;
+  border-radius: 20px;
+}
+
+.photo-thumbnails2 {
+  position: relative;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.photo-card2 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 400px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  text-decoration: none; 
+  color: inherit; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-thumbnails2 a img {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+.photo-thumbnails2 a img:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.photo-thumbnails2 ul {
+  display: flex;
+  background-color: #f4cd5f;
+}
+
+.li1{
+  position: absolute;
+  z-index: 2;
+  list-style: none;
+  width: 100%;
+  height: 80%;
+  display: block;
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  color: #fff;
+  font-family: "Microsoft JhengHei";
+  font-weight: bold;
+  font-size:52px;
+}
+
+.photo-thumbnails2 p{
+  color: #351704;
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: "Microsoft JhengHei";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+
+
+.li2 {
+
+  list-style: none;
+  width: 20%;
+  margin-left: auto;
+  display: flex;
+  background-color: #000000;
+  opacity: 0.5;
+  color: #fff;
+  justify-content: center;
+  font-family: "Microsoft JhengHei";
+  font-weight: bold;
+  font-size:52px;
+}
+
+.photo-thumbnails3 {
+  position: relative;
+  display: flex;
+  gap:30px;
+  margin-top: 30px;
+}
+
+.photo-card3 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: #f4cd5f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 100%;
+  height: 400px;
+  margin-left: 25px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none; 
+  color: #351704; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-card3 img {
+  width: 100%;
+  height: 90%;
+}
+
+.video-card3 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  background-color: #f4cd5f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 40%;
+  height: 400px;
+  margin-right: 20px;
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none; 
+  color:#351704; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card3 img {
+  width: 100%;
+  height: 90%;
+}
+
+.p3controls {
+  position: absolute;
+  top: 360px; 
+  left: 66%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2px;
+  z-index: 10; 
+}
+
+.p3-btn {
+  background-color: transparent;
+  border:1px solid #351704;
+  color: #351704 ;
+  padding: 2px 8px;
+  margin: 0 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.actnann {
+  width: 100%;
+  display: flex;
+
+}
+
+.outact {
+  display: block;
+  margin-top: 30px;
+  width: 30%;
+  height: 400px;
+  background-image: url("images/actimg.png");
+}
+
+.outact h2 {
+  font-size: 35px;
+  color: #ffffff;
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.activity-list {
+  width: 90%;
+  height: 75%;
+  margin-left: 22px;
+  margin-top: 20px;
+  display: block;
+  padding: 50px;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0,0,0,0.2) rgba(0,0,0,0.05);
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+
+
+.activity-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  margin-bottom: 8px;
+  border-top: 1px dashed #999;
+  font-size: 16px;
+  color: #fff;
+}
+
+.announcement {
+  margin-top: 30px;
+  width: 70%;
+  height: 400px;
+  background-color: #f4eee0;
+}
+
+.announcement h2 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #351704;
+  position: relative;
+  top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.announcement-table {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 95%;
+  border-collapse: collapse;
+
+}
+
+.announcement-table thead {
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+
+.announcement-table th {
+  padding: 12px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #351704;
+}
+
+
+
+.announcement-table td {
+  padding: 10px;
+  border-top: 1px dashed #999; /* 橫向點點線 */
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: left;
+  font-size: 18px;
+}
+
+.announcement-table tbody tr:hover {
+  background-color: #f4e8c9;
+  color:#752f21;
+}
+
+.announcement-table a {
+  color: #351704;
+  text-decoration: none;
+}
+
+.announcement-table a:hover {
+  text-decoration: underline;
+}
+
+.label {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #351704;
+  font-family: "Microsoft JhengHei", sans-serif;
+  font-weight: bold;
+}
+
+.label.academic {
+  background-color: #94d0b4; /* 藍色 */
+}
+
+.label.cat {
+  background-color: #96c0e5; /* 綠色 */
+}
+
+.label.dog {
+  background-color: #e7ad41; /* 紅色 */
+}
+
+
+.annbutton {
+  display: flex;
+  margin-left: 800px;
+
+}
+
+.annbutton li{
+  margin: 0 2px;
+  margin-top: 20px;
+  height:45px;
+  width: 210px;
+  background-color: transparent;
+  border: 1px solid #351704;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.annbutton a{
+  white-space: pre;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #351704;
+  font-size: 20px;
+  text-decoration: none;
+}
+ 
+.annbutton a:hover {
+  transform: none;
+  background-color: #351704 !important;
+  color: #fff !important;
+  border-radius: 20px;
+}
+
+.site-footer {
+  height: 370px;
+}
+
+.footer-top {
+  height: 60%;
+  display: flex;
+  color: #fff;
+  gap: 50px;
+  font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.site-footer h3 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 25px;
+  border-bottom: 1px solid #000;
+  color: #351704;
+}
+
+.footer-left {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 60%;
+  height: 70%;
+  display: flex;
+}
+
+
+.footer-left p {
+  white-space: pre;
+  margin: 5px 0;
+  font-size: 18px;
+  color: #351704;
+}
+
+.footer-logo img{
+  width: 100%;
+  height: 100%;
+}
+.footer-logo img:hover {
+  width:100%;
+  height: 100%;
+  background-image: url("images/footer-logo-hover.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-right {
+  margin-top: 20px;
+  margin-right: 50px;
+  width: 70%;
+  height: 70%;
+}
+.footer-right ul {
+  
+  display: flex;
+  gap:200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right li {
+  margin: 0 20px;
+}
+
+.footer-right a {
+  color: #351704;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: #752f21
+}
+
+.footer-mid {
+  display: flex;
+  height: 100px;
+}
+
+.contact {
+  width: 12%;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+
+}
+
+.contact li{
+  list-style: none;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #351704;
+  border-radius: 20px;
+
+}
+
+.contact a{
+  white-space: pre;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #351704;
+  font-size: 20px;
+  text-decoration: none;
+}
+ 
+.contact a:hover {
+  transform: none;
+  background-color: #351704 !important;
+  color: #fff !important;
+  border-radius: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 20px;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 30px;
+} 
+
+.contact-icons li{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  background-color: transparent;
+  border-radius: 20px;
+  background-image: url("images/logo.png");
+}
+
+.contact-icons img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.footer-bot {
+  list-style: none;
+  justify-items: center;
+  height: 50px;
+  background-color: #351704;
+  color: #e8d69d;
+  font-family: "Microsoft JhengHei", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
